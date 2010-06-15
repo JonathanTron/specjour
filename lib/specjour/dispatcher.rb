@@ -85,7 +85,7 @@ module Specjour
     end
 
     def project_name
-      @project_name ||= File.basename(project_path)
+      @project_name ||= (ENV["SPECJOUR_PROJECT_NAME"] || File.basename(project_path))
     end
 
     def reset_manager_threads
