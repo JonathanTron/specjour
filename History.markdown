@@ -3,10 +3,10 @@ History
 0.2.6
 -----
 *master*
+* [added] Allow setting project name used by dispatcher via SPECJOUR_PROJECT_NAME environment variable
 * [fixed] Rsync now transfer symbolic links. gh-6
 * [fixed] DbScrub explicitly requires its dependencies and no longer loads the
   Rakefile. gh-10
-
 0.2.5
 -----
 *2010-05-13*

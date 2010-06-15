@@ -76,6 +76,12 @@ directory, add an exclusion to your projects rsyncd.conf file.
 
     $ vi workbeast/.specjour/rsyncd.conf
 
+## Use a specific project name
+The default configuration is using the project directory as project name. If you want to change the default name for the project, you can set the SPECJOUR_PROJECT_NAME environment variable when starting the tasks.
+
+    $ SPECJOUR_PROJECT_NAME=myproject rake specjour
+    $ SPECJOUR_PROJECT_NAME=myproject rake specjour:cucumber
+
 ## Use one machine
 Distributed testing doesn't have to happen over multiple machines, just multiple processes. Specjour is an excellent candidiate for running 4 tests at once on one machine with 4 cores. Just run `$ specjour` in one window and `$ rake specjour` in another.
 
